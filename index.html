@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login and Registration Form</title>
+        <link rel="stylesheet" href="styleLG.css">
+    </head>
+    <body>
+        <div class="hero">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"> </div>
+                    <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                    <button type="button" class="toggle-btn" onclick="register()"> Register</button>
+                </div>
+                <div class="social-icons">
+                    <img src="fb.png" alt="">
+                    <img src="github.png" alt="">
+                    <img src="gmail.png" alt="">
+                </div>
+                <form id="login" class="input-group">
+                    <input type="text" id="UserID" class="input-field" placeholder="User ID">
+                    <input type="text" id="Pass" class="input-field" placeholder="Enter Password">
+                    <input type="checkbox" class="check-box"> <span>Remember Password</span>
+                    <input type="button" class="submit-btn" value="Login" onclick="LOGIN1()"/>
+                    <!--<button type="submit" class="submit-btn" onclick="LOGIN1()">Log In</button> -->
+    
+                </form>
+                <form id="register" class="input-group">
+                    <input type="text" class="input-field" placeholder="User ID">
+                    <input type="email" class="input-field" placeholder="Email ID">
+                    <input type="text" class="input-field" placeholder="Enter Password">
+                    <input type="checkbox" class="check-box"> <span>I agree to the terms & conditions</span>
+                   <!--<button type="submit" class="submit-btn" onclick="REGISTER1()">Register</button> -->
+                   <input type="button" class="submit-btn" value="Register" onclick="REGISTER1()"/>
+                </form>
+            </div>         
+        </div>
+        <script src="myScript.js"></script>
+    </body>
+</html>
